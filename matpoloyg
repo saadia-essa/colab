@@ -1,0 +1,59 @@
+ importing the necessary libraries and modules
+import matplotlib.pyplot as plt
+import numpy as np
+# creating the data values for the vertical y and horisontal x axis
+x = np.array(["BSE","BBIT", "BSCIT", "BCS", "BCM"])
+y = np.array([200, 400, 250, 180, 180])
+# using the pyplot.bar funtion
+plt.bar(x,y)
+plt.xlabel("COURSE
+plt.ylabel("NUMBER OF STUDENTS")
+plt.title("INTAKE AS PER THE COURSES")
+# to show our graph
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+# Use numpy to generate a bunch of random data in a bell curve around 5.
+n = 5 + np.random.randn(1000) #is used to generate an array of random numbers from a standard normal distribution (also known as a Gaussian distribution or a bell curve)
+m = [m for m in range(len(n))]
+plt.bar(m, n)
+plt.title("Raw Data")
+plt.show()
+plt.hist(n, bins=20) #Bins are the number of intervals you want to divide all of your data into, such that it can be displayed as bars on a histogram.
+#width = (1000 – 0 ) / 20 = 200
+plt.title("Histogram")
+plt.show()
+plt.hist(n,cumulative=True, bins=20, edgecolor="yellow", color="green") #When cumulative is set to True in these functions, it means that the operation will be performed cumulatively on the elements of an array or a sequence.
+plt.title("Cumulative Histogram")
+plt.show()
+
+
+
+# importing the necessary libraries and modules
+import matplotlib.pyplot as plt
+import numpy as np
+# creating the data values for the vertical y and horisontal x axis
+x = np.array(["BSE","BBIT", "BSCIT", "BCS", "BCM"])
+y = np.array([200, 400, 250, 180, 180])
+# using the pyplot.bar funtion
+plt.bar(x,y)
+plt.xlabel("COURSE")
+plt.ylabel("NUMBER OF STUDENTS")
+plt.title("INTAKE AS PER THE COURSES")
+# to show our graph
+plt.show()
+
+import matplotlib.pyplot as plt
+x1 = ["BSE","BBIT", "BSCIT", "BCS", "BCM"]
+y1 = [200, 400, 250, 180, 180]
+plt.bar(x1, y1, label="Distribution", color='r')
+plt.plot()
+plt.xlabel("COURSE")
+plt.ylabel("NUMBER OF STUDENTS")
+plt.title("INTAKE AS PER THE COURSES")
+plt.legend()
+plt.show()
+
